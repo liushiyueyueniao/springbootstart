@@ -1,0 +1,12 @@
+# Yet anther markup language (.yml/ .yaml)  json的子集
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: metrics,health,info
+info:
+  app-name: spring-boot-lsp-start
+  env: ${ENV}
